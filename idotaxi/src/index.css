@@ -1,0 +1,164 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --color-background: #0a1736;
+  --color-foreground: #ffffff;
+  --color-border: rgba(212, 175, 55, 0.18);
+  --color-input: rgba(212, 175, 55, 0.18);
+  --color-ring: #d4af37;
+
+  --color-primary: #d4af37;
+  --color-primary-foreground: #0a1736;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.text-gold-gradient {
+  background: linear-gradient(180deg, #f5d76e 0%, #d4af37 50%, #a67c1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f5d76e 0%, #d4af37 50%, #a67c1f 100%);
+}
+
+.bg-gold-gradient-vertical {
+  background: linear-gradient(180deg, #f5d76e 0%, #d4af37 50%, #a67c1f 100%);
+}
+
+.glass-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid rgba(212,175,55,0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212,175,55,0.45);
+  background: linear-gradient(180deg, rgba(212,175,55,0.05) 0%, rgba(212,175,55,0.01) 100%);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.30), 0 0 0 1px rgba(212,175,55,0.08);
+}
+
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #f5d76e 0%, #d4af37 50%, #a67c1f 100%);
+  color: #0a1736;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 12px;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 0 6px 30px rgba(212,175,55,0.40), 0 0 0 1px rgba(245,215,110,0.4), inset 0 1px 0 rgba(255,255,255,0.30);
+  transition: box-shadow 0.22s ease, transform 0.18s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 50px rgba(212,175,55,0.65), 0 12px 36px rgba(0,0,0,0.40), 0 0 0 1px rgba(245,215,110,0.6), inset 0 1px 0 rgba(255,255,255,0.30);
+  transform: translateY(-2px);
+  color: #0a1736;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 15px 26px;
+  background: transparent;
+  color: rgba(255,255,255,0.78);
+  text-decoration: none;
+  outline: none;
+  border: 1px solid rgba(212,175,55,0.30);
+  border-radius: 4px;
+  font-size: 11px;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.22s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.btn-ghost:hover {
+  background: rgba(212,175,55,0.08);
+  border-color: rgba(212,175,55,0.65);
+  color: #f5d76e;
+  transform: translateY(-2px);
+}
+
+.shimmer-layer {
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent 25%, rgba(255,255,255,0.32) 50%, transparent 75%);
+  animation: shimmer 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { left: -80% }
+  28% { left: 130% }
+  100% { left: 130% }
+}
+
+.deco-line {
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212,175,55,0.7), transparent);
+  animation: deco-pulse 4s ease-in-out infinite;
+}
+
+@keyframes deco-pulse {
+  0%, 100% { width: 80px; opacity: 0.45; }
+  50% { width: 140px; opacity: 1; }
+}
+
+.reveal-stagger {
+  opacity: 0;
+  transform: translateY(22px);
+}
+
+.reveal-stagger.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.72s cubic-bezier(0.22,1,0.36,1), transform 0.72s cubic-bezier(0.22,1,0.36,1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .deco-line, .shimmer-layer { animation: none !important; }
+  .reveal-stagger { opacity: 1 !important; transform: none !important; }
+}
