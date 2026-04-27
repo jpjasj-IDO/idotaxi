@@ -9,15 +9,11 @@ import {
 const FAQS = [
   {
     q: "How do I book a ride?",
-    a: "You have four ways to book: through the I DO TAXI app, by calling 24/7 dispatch at +961 3 593 596, by WhatsApp, or by emailing info@idotaxi.net. The app is the fastest — open it, choose your vehicle type, and a driver is on the way."
+    a: "You have four ways to book: through the I DO TAXI app, by calling dispatch at +961 3 593 596, by WhatsApp, or by emailing info@idotaxi.net. The app is the fastest — open it, choose your vehicle type, and a driver is on the way."
   },
   {
     q: "What are Cab Coins and how do they work?",
     a: "Cab Coins are our loyalty rewards. You earn them automatically with every kilometer you ride through the I DO TAXI app, and you can redeem them straight from the app for discounts on future trips. The more you ride, the more you save."
-  },
-  {
-    q: "Can I carpool to save money?",
-    a: "Yes. When ordering in the app, simply pick the vehicle type 'Carpool' and you'll share the ride with others heading in the same direction — a great way to lower your daily commute cost."
   },
   {
     q: "What is TAXIDO VIP?",
@@ -25,7 +21,7 @@ const FAQS = [
   },
   {
     q: "Do you operate 24/7?",
-    a: "Yes. Our dispatch center and drivers are available 24 hours a day, 7 days a week, 365 days a year, including all holidays. Three lines are open: dispatch +961 3 593 596, VIP +961 70 110 403, and our office +961 4 710 445."
+    a: "Yes. Drivers are available 24 hours a day, 7 days a week, 365 days a year, including all holidays. Three lines are open: dispatch +961 3 593 596, VIP +961 70 110 403, and our office +961 4 710 445."
   },
   {
     q: "Can I chat with my driver?",
