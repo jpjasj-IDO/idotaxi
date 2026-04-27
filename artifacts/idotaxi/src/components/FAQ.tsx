@@ -24,10 +24,6 @@ const FAQS = [
     a: "Yes. Drivers are available 24 hours a day, 7 days a week, 365 days a year, including all holidays. Three lines are open: dispatch +961 3 593 596, VIP +961 70 110 403, and our office +961 4 710 445."
   },
   {
-    q: "Can I chat with my driver?",
-    a: "Yes — directly through WhatsApp from inside the app. No need to share or dial a number; just tap to message your assigned driver."
-  },
-  {
     q: "Do you accept card payments?",
     a: "Yes. If you book through the I DO TAXI app, you can securely pay with a credit or debit card. Cash is also accepted for all rides."
   },
