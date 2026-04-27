@@ -17,7 +17,7 @@ const FAQS = [
   },
   {
     q: "What is TAXIDO VIP?",
-    a: "TAXIDO VIP is our premium chauffeur arm — refined vehicles and trained drivers for executives, hotels, weddings, and special occasions. Reach VIP dispatch directly on +961 70 110 403, anytime."
+    a: "TAXIDO VIP is our premium chauffeur arm — refined vehicles and trained drivers for executives, hotels, weddings, and special occasions. Reach VIP dispatch directly on +961 03 593 596, anytime."
   },
   {
     q: "Do you operate 24/7?",
