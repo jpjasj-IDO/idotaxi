@@ -11,13 +11,6 @@ const FLEET = [
   },
   {
     name: "GO-PLUS",
-    desc: "Premium sedans with leather interiors for business and long-distance travel.",
-    pax: "1–6",
-    img: "/fleet-comfort.png",
-    features: ["Leather Seats", "Complimentary Water", "Free Wi-Fi"]
-  },
-  {
-    name: "Group / Van",
     desc: "Spacious passenger vans ideal for airport runs with luggage or group tours.",
     pax: "1–7",
     img: "/fleet-van.png",
@@ -72,7 +65,7 @@ export default function Fleet() {
           Maintained to the highest standards of cleanliness and safety. Select the class that best fits your journey.
         </p>
 
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-left">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 text-left">
           {FLEET.map((vehicle, i) => (
             <div key={i} className="reveal-stagger glass-card rounded-[12px] overflow-hidden flex flex-col group">
               <div className="w-full aspect-[16/10] overflow-hidden relative bg-[#0a1736]">
