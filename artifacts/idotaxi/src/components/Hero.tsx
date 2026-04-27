@@ -160,7 +160,7 @@ export default function Hero() {
 
         <div className="reveal-stagger flex items-center gap-[14px] text-[10px] tracking-[0.5em] uppercase text-white/50 mb-7 font-medium">
           <span className="w-7 h-px bg-[#d4af37]/55" />
-          <span className="text-[#f5d76e]">🇱🇧</span> Proudly Lebanese · Since 2015
+          <span className="text-[#f5d76e]">Proudly Lebanese · Since 2015</span>
           <span className="w-7 h-px bg-[#d4af37]/55" />
         </div>
 
