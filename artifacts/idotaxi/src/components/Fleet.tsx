@@ -12,7 +12,7 @@ const FLEET = [
   {
     name: "GO-PLUS",
     desc: "Spacious passenger vans ideal for airport runs with luggage or group tours.",
-    pax: "1–7",
+    pax: "1–6",
     img: "/fleet-van.png",
     features: ["Extra Luggage Space", "Spacious Seating", "Air Conditioning"]
   }
