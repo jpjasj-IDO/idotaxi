@@ -3,19 +3,19 @@ import { Star } from 'lucide-react';
 
 const REVIEWS = [
   {
-    text: "Always on time, cars are spotless, and the drivers are very professional. They've been my go-to for airport runs since 2018.",
-    author: "Marc D.",
-    role: "Frequent BEY traveller"
+    text: "Great experience and very reliable. Surprisingly, there's an actual working meter — a nice touch. The car was in excellent condition too. Highly recommended.",
+    author: "Elie K.",
+    role: "Google Reviews"
   },
   {
-    text: "The app makes booking so easy, and I love that I can track the car. Finally a modern, reliable taxi service in Beirut.",
-    author: "Joelle K.",
-    role: "Achrafieh"
+    text: "Found this taxi company on Google and decided to give it a try because of the positive reviews. The service definitely lived up to the comments. The driver was professional and friendly, and he arrived in 15 minutes as promised. Highly recommend!",
+    author: "Akbota K.",
+    role: "Google Reviews"
   },
   {
-    text: "We use their corporate account for all our visiting clients. Seamless billing and premium cars every single time.",
-    author: "Layla S.",
-    role: "Corporate Client"
+    text: "I tried I DO TAXI and was really impressed by the drivers' punctuality. They're professional, know the rules of the road, and above all, drive carefully. What's especially great is that the cost is much lower compared to other companies.",
+    author: "Zeina D.",
+    role: "Google Reviews"
   }
 ];
 
